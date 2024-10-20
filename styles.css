@@ -1,0 +1,24 @@
+
+#turnMarker{
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+}
+
+.box{
+    min-height: 100px;
+}
+#grid{
+    max-width: 300px;
+}
+
+#alertContainer{
+    min-height: 70px;
+}
+
+#alertContainer .alert{
+    display: none;
+    text-align: center;
+}

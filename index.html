@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<!-- Using any of the tools you've worked with so far, create a game of Tic-Tac-Toe.
+Create a Tic-Tac-Toe game grid using your HTML element of choice.
+When a cell in the grid is clicked, an X or O should appear in that spot depending 
+on whose turn it is.
+A heading should say whether it is X's or O's turn and change with each move made.
+A button should be available to clear the grid and restart the game.
+When a player has won, or the board is full and the game results in a draw, 
+a Bootstrap alert or similar Bootstrap component should appear across the screen 
+announcing the winner. -->
+
+<!-- Create a heading with an id so you can change it in JS -->
+<h1 id="title">Tic-Tac-Toe Game</h1>
+<h2 id="turnMarker">X's Turn!</h2>
+<!-- <br> -->
+
+<!-- Alert Pop UP -->
+<div id="alertContainer">
+    <div id="startAlert" class="alert alert-info" role="alert">
+        Start Game!
+    </div>
+    
+    <div id="winnerAlert" class="alert alert-success" role="alert">
+        
+    </div>
+    
+    <div id="tieAlert" class="alert alert-danger" role="alert">
+        Tie Game!
+    </div>
+</div>
+<!-- Create a grid to use as the game grid -->
+
+<div class="container m-auto p-5 g-5">
+    <div id="grid" class="container-outline-light m-auto p-0">
+        <div class="row fs-1 g-0">
+            <div class="col">
+                <div id="square1" class="box col p-3 border border-info"></div>
+            </div>
+            <div class="col">
+                <div id="square2" class="box col p-3 border border-info"></div>
+            </div>
+            <div class="col">
+                <div id="square3" class="box col p-3 border border-info"></div>
+            </div>
+        </div>
+        <div class="row fs-1 g-0">
+            <div class="col">
+                <div id="square4" class="box col p-3 border border-info"></div>
+            </div>
+            <div class="col">
+                <div id="square5" class="box col p-3 border border-info"></div>
+            </div>
+            <div class="col">
+                <div id="square6" class="box col p-3 border border-info"></div>
+            </div>
+        </div>
+        <div class="row fs-1 g-0">
+            <div class="col">
+                <div id="square7" class="box col p-3 border border-info"></div>
+            </div>
+            <div class="col">
+                <div id="square8" class="box col p-3 border border-info"></div>
+            </div>
+            <div class="col">
+                <div id="square9" class="box col p-3 border border-info"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<!-- Create a button to clear the grid and restart the game -->
+<div class="d-grid col-3 gap-3 mx-auto pt-4">
+    <button id="newGameBtn" type="button" class="btn btn-success btn-lg">New Game</button> 
+</div> 
+
+
+
+<script src="index.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+
+</body>
+</html>
